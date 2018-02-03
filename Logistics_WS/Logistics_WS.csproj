@@ -33,6 +33,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -82,21 +84,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Docs\WS_Documentation.aspx" />
     <Content Include="LogisticsService.asmx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\LogisticsService.cs">
       <SubType>Component</SubType>
     </Content>
-    <Compile Include="Docs\WS_Documentation.aspx.cs">
-      <DependentUpon>WS_Documentation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Docs\WS_Documentation.aspx.designer.cs">
-      <DependentUpon>WS_Documentation.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Model\DownloadFile.cs" />
     <Compile Include="Model\Duty.cs" />
     <Compile Include="Model\PostalPrice.cs" />
