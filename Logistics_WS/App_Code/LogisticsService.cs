@@ -507,10 +507,29 @@ public class LogisticsService : System.Web.Services.WebService
     "searchBy and searchText must be case-sensitive.")]
     public DataTable SearchHsCodeInformation(string searchBy, string searchText)
     {
+        DataSet ds_whole = new DataSet();
+        DataTable ds_result = new DataTable();
         DataTable dt = new DataTable();
-        //string searchText_final = "";
 
-        dt = ExcelSearchData_EP(hsCodeUrl, 1, searchBy, searchText);
+        ds_whole = ExcelReadData_EP(hsCodeUrl, 1);
+        ds_result = ds_whole.Tables[0];
+
+        IEnumerable<DataRow> query =
+            from port in ds_result.AsEnumerable()
+            where port.Field<string>(searchBy).Contains(searchText.ToUpper())
+            select port;
+
+        //If query is not empty search result will be copied into data table.
+        if (query.Any())
+        {
+            dt = query.CopyToDataTable<DataRow>();
+            dt.TableName = "SearchInfoList";
+        }
+        else
+        {
+            dt.TableName = "EmptySearchInfoList";
+        }
+        // Create a table from the query.
 
         return dt;
     }

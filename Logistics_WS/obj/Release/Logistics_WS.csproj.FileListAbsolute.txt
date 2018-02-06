@@ -1,0 +1,13 @@
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\bin\Logistics_WS.dll.config
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\bin\Logistics_WS.dll
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\bin\Logistics_WS.pdb
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\bin\ExcelDataReader.DataSet.dll
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\bin\ExcelDataReader.dll
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\bin\ExcelDataReader.xml
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\bin\ExcelDataReader.DataSet.xml
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\obj\Release\Logistics_WS.csprojResolveAssemblyReference.cache
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\obj\Release\Logistics_WS.csproj.CoreCompileInputs.cache
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\obj\Release\Logistics_WS.dll
+C:\Users\rhrlg\source\repos\Logistics_WS\Logistics_WS\obj\Release\Logistics_WS.pdb
